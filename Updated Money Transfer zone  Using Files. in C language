@@ -59,8 +59,6 @@ XY:
     case 2:
         system("CLS");
         reg();
-        det();
-        printf("\t\t\t\tEnter Here: ");
         break;
     default:
         printf("\n\n\t\t\t\tNO MATCH FOUND");
@@ -69,7 +67,7 @@ XY:
             system("CLS");
         goto XY;
     }
-
+     goto RR;
 
     scanf("%d",&u);
     if(u==1)
@@ -111,12 +109,13 @@ XY:
         }
     while
     (qqq==0);
-     printf("\n\t\t\t\tThanks For being with us! ");
+    RR:
+     printf("\n\n\t\t\t\tThanks For being with us! ");
         printf("\n\n\t\t\tMade With Proud, By Rohan.\n\n\n");
 
 return 0;
 }
-
+///-----------------------------------------------------------
 
 void Num1()
 {
@@ -406,6 +405,7 @@ void reg()
             case 2:
                 system("CLS");
                 printf("\n\n\n\t\t\t\t\tTHANK YOU FOR REGISTERING");
+                qqq++;
                 break;
             }
         }
